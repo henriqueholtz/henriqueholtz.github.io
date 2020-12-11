@@ -1,3 +1,13 @@
+
+.tableSkils {
+  padding: 40px 40px;
+  border: 4px solid #484848;
+}
+
+.item {
+  font-weight: bold;
+  text-align: left;
+}
 /*!
  * Bootstrap Reboot v4.0.0-beta.3 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
