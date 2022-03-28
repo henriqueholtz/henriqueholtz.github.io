@@ -10,7 +10,7 @@
 
 # next.js
 /.next/
-# /out/ # necessary to gh-pages
+/out/
 
 # production
 /build
