@@ -1,0 +1,18 @@
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    .icon {
+      justify-content: center;
+      max-width: 70px;
+    }
+  }
+  :global a svg {
+    color: #000;
+  }
+}
