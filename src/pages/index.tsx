@@ -1,7 +1,12 @@
+import Head from 'next/head';
+
 export default function Home() {
   return (
-    <div>
+    <>
+      <Head>
+        <title>{`[Home] - Henrique Holtz's Page`}</title>
+      </Head>
       <h1>Henrique With Typescript!</h1>
-    </div>
+    </>
   );
 }
