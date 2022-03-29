@@ -1,6 +1,6 @@
 import { Link, List, ListItem } from '@material-ui/core';
 import React from 'react';
-import { GitHubIcon } from '../Icons';
+import { GitHubIcon, LinkedinIcon } from '../Icons';
 import styles from './FooterStyles.module.scss';
 
 export function Footer() {
@@ -17,6 +17,20 @@ export function Footer() {
           >
             <GitHubIcon
               viewBox="7 5 50 50"
+              style={{ width: '25px', height: '25px' }}
+            />
+          </Link>
+        </ListItem>
+        <ListItem key="github-icon" className={styles.icon}>
+          <Link
+            color="initial"
+            href="https://www.linkedin.com/in/henrique-holtz/"
+            target="_blank"
+            rel="noreferrer"
+            underline="none"
+          >
+            <LinkedinIcon
+              viewBox="0 0 130 130"
               style={{ width: '25px', height: '25px' }}
             />
           </Link>
