@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer } from '../Footer';
+import { CustomAppBar, Footer } from '../index';
 
 type DefaultLayoutProps = {
   children: JSX.Element | JSX.Element[];
@@ -8,7 +8,8 @@ type DefaultLayoutProps = {
 export function DefaultLayout({ children }: DefaultLayoutProps) {
   return (
     <>
-      {children}
+      <CustomAppBar />
+      <main>{children}</main>
       <Footer />
     </>
   );

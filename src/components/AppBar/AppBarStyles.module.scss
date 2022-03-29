@@ -1,0 +1,30 @@
+.appBar {
+  background-color: var(--primary-color) !important;
+  max-height: 50px;
+
+  .toolbar {
+    .list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      padding: 0;
+      height: 50px;
+      position: absolute;
+      top: 0;
+
+      .listItem {
+        padding: 0 16px;
+        cursor: pointer;
+        height: 100%;
+
+        .text {
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
