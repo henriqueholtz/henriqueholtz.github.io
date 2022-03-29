@@ -13,3 +13,6 @@ CMD ["yarn", "dev"]
 ## run using Dockerfile.dev only:
 # docker build -t henriqueholtz-next:dev . -f .\Dockerfile.dev
 # docker run -v ${PWD}:/appdev -v /appdev/node_modules -p 3001:3000 henriqueholtz-next:dev
+
+## Or using docker-compose.dev.yml:
+# docker-compose -f .\docker-compose.dev.yml up --build

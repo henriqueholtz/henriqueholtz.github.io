@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  henriqueholtz-nextjs:
+    ports:
+      - '3001:3000'
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/appdev
+      - henriqueholtz-dev-node_modules:/appdev/node_modules
+      - henriqueholtz-dev-next:/appdev/.next
+    restart: always
+
+volumes:
+  henriqueholtz-dev-node_modules: {}
+  henriqueholtz-dev-next: {}
+# docker-compose -f .\docker-compose.dev.yml up --build
