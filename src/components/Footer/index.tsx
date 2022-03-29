@@ -21,7 +21,7 @@ export function Footer() {
             />
           </Link>
         </ListItem>
-        <ListItem key="github-icon" className={styles.icon}>
+        <ListItem key="linkedin-icon" className={styles.icon}>
           <Link
             color="initial"
             href="https://www.linkedin.com/in/henrique-holtz/"
