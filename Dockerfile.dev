@@ -1,0 +1,15 @@
+# [Development]
+FROM node:14 as dev
+
+RUN mkdir /appdev
+WORKDIR /appdev
+COPY package*.json ./
+COPY yarn.lock ./
+COPY next.config.js ./
+
+RUN yarn install --frozen-lockfile
+CMD ["yarn", "dev"]
+
+## run using Dockerfile.dev only:
+# docker build -t henriqueholtz-next:dev . -f .\Dockerfile.dev
+# docker run -v ${PWD}:/appdev -v /appdev/node_modules -p 3001:3000 henriqueholtz-next:dev
