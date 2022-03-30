@@ -17,5 +17,7 @@ services:
 volumes:
   henriqueholtz-dev-node_modules: {}
   henriqueholtz-dev-next: {}
+# [Yarn] yarn dev-docker-compose
+# [NPM] npm run dev-docker-compose
 # [Terminal]: docker-compose -f .\docker-compose.dev.yml up --build
 # [Git Bash]: docker-compose -f docker-compose.dev.yml up --build
