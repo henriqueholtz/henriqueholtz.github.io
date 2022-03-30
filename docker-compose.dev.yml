@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   henriqueholtz-nextjs:
+    container_name: henriqueholtz-nextjs-dev
     ports:
       - '3001:3000'
     build:
