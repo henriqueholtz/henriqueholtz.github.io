@@ -1,3 +1,14 @@
 .main {
-  margin-top: 55px;
+  margin-top: 50px;
+  padding: 5px 0 0 5px;
+  width: 100%;
+  min-height: calc(100vh - 50px); //size of CustomAppBar
+  background-image: linear-gradient(
+    to right top,
+    #17161d,
+    #151b21,
+    #162021,
+    #1c2421,
+    #252721
+  );
 }
