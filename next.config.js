@@ -10,6 +10,7 @@ const Pages = {
 // module.exports = (phase, { defaultConfig }) => {
 const nextConfig = {
   reactStrictMode: true,
+  // exportTrailingSlash: true,
   // swcMinify: true, //try later
   compiler: {
     // removeConsole: true, //try later
@@ -25,6 +26,7 @@ const nextConfig = {
       };
     }
 
+    //WARNING: This looks lose the SPA feel
     return {
       ...devPaths,
       '/About': Pages.about,
