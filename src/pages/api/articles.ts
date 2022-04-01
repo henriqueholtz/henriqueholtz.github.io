@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next/types';
-import { Article } from '../types';
+import { Article } from '../../types';
 
 const data = [
   {

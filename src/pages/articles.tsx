@@ -2,7 +2,7 @@ import Head from '../components/Head';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { List, ListItem, Link } from '@material-ui/core';
-import { Article } from './types';
+import { Article } from '../types';
 
 export default function Articles() {
   const [loading, setLoading] = useState<boolean>(true);
