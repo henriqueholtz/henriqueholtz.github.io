@@ -12,28 +12,30 @@ const nextConfig = {
   reactStrictMode: true,
   // exportTrailingSlash: true,
   // swcMinify: true, //try later
-  compiler: {
-    // removeConsole: true, //try later
-  },
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    let devPaths = {};
-    if (dev) {
-      devPaths = {
-        '/Dev': Pages.about,
-      };
-    }
+  // compiler: {
+  // removeConsole: true, //try later
+  // },
 
-    //WARNING: This looks lose the SPA feel
-    return {
-      ...devPaths,
-      '/About': Pages.about,
-      '/': Pages.home,
-      '/Home': Pages.home,
-    };
-  },
+  //   //WARNING: This looks lose the SPA feel
+  // exportPathMap: async function (
+  //   defaultPathMap,
+  //   { dev, dir, outDir, distDir, buildId }
+  // ) {
+  //   let devPaths = {};
+  //   if (dev) {
+  //     devPaths = {
+  //       '/Dev': Pages.about,
+  //     };
+  //   }
+
+  //   //WARNING: This looks lose the SPA feel
+  //   return {
+  //     ...devPaths,
+  //     '/About': Pages.about,
+  //     '/': Pages.home,
+  //     '/Home': Pages.home,
+  //   };
+  // },
 };
 
 module.exports = nextConfig;
