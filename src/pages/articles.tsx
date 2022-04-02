@@ -12,9 +12,9 @@ export default function Articles() {
   useEffect(() => {
     const fetchAsync = async () => {
       await axios
-        .get(`api/articles`)
+        .get(`/api/articles.json`)
         .then((resp) => {
-          console.log('data', resp.data);
+          console.log('data', resp);
           setData(resp.data);
           setLoading(false);
           setError(false);
