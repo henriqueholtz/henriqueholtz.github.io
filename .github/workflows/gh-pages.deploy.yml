@@ -37,8 +37,8 @@ jobs:
       - name: Copy data file (article.json)
         uses: canastro/copy-file-action@master
         with:
-          source: 'src/data/api/articles.json'
-          target: 'data/articles.json'
+          source: './src/data/api/articles.json'
+          target: './out/data/articles.json'
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
