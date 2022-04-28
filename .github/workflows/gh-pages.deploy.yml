@@ -28,6 +28,8 @@ jobs:
           else
           npm i
           fi
+      - name: Run tests
+        run: npm run test-with-coverage
       - name: Build project
         run: npm run build
       - name: Export static files
