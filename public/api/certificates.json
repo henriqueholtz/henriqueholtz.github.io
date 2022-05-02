@@ -8,7 +8,8 @@
       "link": "https://fullcycle.com.br"
     },
     "date": "04/2022",
-    "url": "/certificates/fullcycle3/docker.png"
+    "url": "/certificates/fullcycle3/docker.png",
+    "tags": ["docker", "docker-compose"]
   },
   {
     "id": 2,
@@ -19,17 +20,19 @@
       "link": "https://fullcycle.com.br"
     },
     "date": "04/2022",
-    "url": "/certificates/fullcycle3/ci.png"
+    "url": "/certificates/fullcycle3/ci.png",
+    "tags": []
   },
   {
     "id": 3,
     "title": "Padrões e técnicas avançadas com Git e Github",
-    "description": "Description",
+    "description": "Padrões e técnicas avançadas com Git e Github, incluindo SonarQube",
     "instituion": {
       "name": "Full Cycle",
       "link": "https://fullcycle.com.br"
     },
     "date": "04/2022",
-    "url": "/certificates/fullcycle3/tecnicas-avancadas-com-git-e-github.png"
+    "url": "/certificates/fullcycle3/tecnicas-avancadas-com-git-e-github.png",
+    "tags": ["SonarQube", "SonarCloud"]
   }
 ]

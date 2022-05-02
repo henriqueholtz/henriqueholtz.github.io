@@ -49,6 +49,9 @@ export default function Certificates() {
                   See my certificate
                 </Link>
                 {/* {cert.description} */}
+                <p style={{ paddingLeft: '5px' }}>
+                  {cert.tags?.map((tag) => ` #${tag} `)}
+                </p>
               </ListItem>
             ))}
           </List>

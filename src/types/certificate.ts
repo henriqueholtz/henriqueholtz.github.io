@@ -5,6 +5,7 @@ export type Certificate = {
   date: string;
   url: string;
   instituition: Instituition;
+  tags?: string[];
 };
 
 type Instituition = {
