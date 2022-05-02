@@ -1,7 +1,12 @@
 export type Certificate = {
   id: number;
-  name: string;
-  description: string;
-  date: Date;
+  title: string;
+  description?: string;
+  date: string;
   url: string;
+  instituition: Instituition;
+};
+
+type Instituition = {
+  name: string;
 };
