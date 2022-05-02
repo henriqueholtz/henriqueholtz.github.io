@@ -26,7 +26,7 @@ export default function Articles() {
 
   return (
     <>
-      <Head title="About" />
+      <Head title="Articles" />
       {loading ? (
         <h3>Loading</h3>
       ) : (
