@@ -34,5 +34,53 @@
     "date": "04/2022",
     "url": "/certificates/fullcycle3/tecnicas-avancadas-com-git-e-github.png",
     "tags": ["SonarQube", "SonarCloud"]
+  },
+  {
+    "id": 4,
+    "title": "C#: Trabalhando com coleções, XML e JSON",
+    "description": "CERTIFICAÇÃO C# PROGRAMMING PARTE 6: COLEÇÕES, XML E JSON",
+    "instituion": {
+      "name": "Alura",
+      "link": "https://alura.com.br"
+    },
+    "date": "08/2021",
+    "url": "https://cursos.alura.com.br/certificate/38741ec6-4b11-48c1-a41a-e9840591eced",
+    "tags": ["c#", "XML", "JSON"]
+  },
+  {
+    "id": 5,
+    "title": "REACT ROUTER: NAVEGAÇÃO EM UMA SPA",
+    "description": "REACT ROUTER: NAVEGAÇÃO EM UMA SPA",
+    "instituion": {
+      "name": "Alura",
+      "link": "https://alura.com.br"
+    },
+    "date": "07/2021",
+    "url": "https://cursos.alura.com.br/certificate/07c1d1ab-a871-495e-816e-7f077d860b96",
+    "tags": ["React", "ReactJs", "SPA", "react-router"]
+  },
+  {
+    "id": 6,
+    "title": "REACT: ABSTRAINDO SEU CSS COM STYLED COMPONENTS",
+    "description": "REACT: ABSTRAINDO SEU CSS COM STYLED COMPONENTS",
+    "instituion": {
+      "name": "Alura",
+      "link": "https://alura.com.br"
+    },
+    "date": "07/2021",
+    "url": "https://cursos.alura.com.br/certificate/06670bc4-f06b-478f-b456-c89189871652",
+    "tags": ["React", "ReactJs", "CSS", "Styled Components"]
+  },
+  {
+    "id": 7,
+    "title": "REACT: AUTOMATIZANDO OS TESTES EM APLICAÇÕES FRONT-END",
+    "description": "REACT: AUTOMATIZANDO OS TESTES EM APLICAÇÕES FRONT-END",
+    "instituion": {
+      "name": "Alura",
+      "link": "https://alura.com.br"
+    },
+    "date": "07/2021",
+    "url": "https://cursos.alura.com.br/certificate/dcf00bfe-96d2-46e7-bcbc-b3175e8e8e48",
+    "tags": ["React", "ReactJs", "Testes"]
   }
 ]
