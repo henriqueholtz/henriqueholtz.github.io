@@ -14,6 +14,7 @@ export function CustomAppBar() {
             <Item path="/about" text="About" />
             <Item path="/articles" text="Articles" />
             <Item path="/certificates" text="Certificates" />
+            <Item path="/projects" text="Projects" />
           </List>
         </Toolbar>
       </AppBar>
