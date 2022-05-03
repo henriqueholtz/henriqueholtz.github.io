@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import CustomHead from '../components/Head';
 import axios from 'axios';
-import { List, ListItem, Link, Typography } from '@material-ui/core';
+import {
+  List,
+  ListItem,
+  Link,
+  Typography,
+  Card,
+  Avatar,
+} from '@material-ui/core';
 import { Certificate } from '../types/certificate';
 
 export default function Certificates() {
@@ -35,23 +42,33 @@ export default function Certificates() {
           <List>
             {data?.map((cert: Certificate) => (
               <ListItem key={cert.id}>
-                <Typography
-                  style={{ fontWeight: 700 }}
-                >{`${cert.title} - `}</Typography>
-                <Link
-                  color="initial"
-                  href={cert.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  underline="none"
-                  style={{ paddingLeft: '5px' }}
-                >
-                  See my certificate
-                </Link>
-                {/* {cert.description} */}
-                <p style={{ paddingLeft: '5px' }}>
-                  {cert.tags?.map((tag) => ` #${tag} `)}
-                </p>
+                <Avatar
+                  variant="rounded"
+                  src={cert.url}
+                  style={{ width: '50px', marginRight: '8px' }}
+                  className="d-inline-block"
+                />
+                <Card style={{ width: '100%', padding: '3px 8px' }}>
+                  <Typography
+                    style={{ fontWeight: 700 }}
+                    className="d-inline-block"
+                  >{`${cert.title} - `}</Typography>
+                  <Link
+                    color="initial"
+                    href={cert.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    underline="none"
+                    className="d-inline-block"
+                    style={{ paddingLeft: '5px' }}
+                  >
+                    See my certificate
+                  </Link>
+                  {/* {cert.description} */}
+                  <p style={{ paddingLeft: '5px' }} className="d-inline-block">
+                    {cert.tags?.map((tag) => ` #${tag} `)}
+                  </p>
+                </Card>
               </ListItem>
             ))}
           </List>
