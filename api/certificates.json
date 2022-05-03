@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Docker",
+    "description": "Docker and docker-compose",
+    "instituion": {
+      "name": "Full Cycle",
+      "link": "https://fullcycle.com.br"
+    },
+    "date": "04/2022",
+    "url": "/certificates/fullcycle3/docker.png",
+    "tags": ["docker", "docker-compose"]
+  },
+  {
+    "id": 2,
+    "title": "CI - Continuous Integration",
+    "description": "Continuous Integration with Github Actions",
+    "instituion": {
+      "name": "Full Cycle",
+      "link": "https://fullcycle.com.br"
+    },
+    "date": "04/2022",
+    "url": "/certificates/fullcycle3/ci.png",
+    "tags": []
+  },
+  {
+    "id": 3,
+    "title": "Padrões e técnicas avançadas com Git e Github",
+    "description": "Padrões e técnicas avançadas com Git e Github, incluindo SonarQube",
+    "instituion": {
+      "name": "Full Cycle",
+      "link": "https://fullcycle.com.br"
+    },
+    "date": "04/2022",
+    "url": "/certificates/fullcycle3/tecnicas-avancadas-com-git-e-github.png",
+    "tags": ["SonarQube", "SonarCloud"]
+  }
+]
