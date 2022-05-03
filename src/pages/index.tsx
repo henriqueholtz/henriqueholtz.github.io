@@ -8,7 +8,7 @@ export default function Home() {
       <Typography
         variant="h3"
         variantMapping={{ h3: 'h1' }}
-      >{`Welcome!`}</Typography>
+      >{`Welcome to my webpage!`}</Typography>
     </>
   );
 }
