@@ -1,7 +1,13 @@
+@import './spaces.scss';
+
 .d-inline-block {
   display: inline-block;
 }
 
 .float-right {
   float: right;
+}
+
+.text-center {
+  text-align: center;
 }

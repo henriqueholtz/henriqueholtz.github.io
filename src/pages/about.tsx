@@ -27,7 +27,7 @@ export default function About() {
           display: `${stats === RequestStats.Executing ? 'none' : ''}`,
         }}
       >
-        <Grid container>
+        <Grid container style={{ display: 'flex', justifyContent: 'center' }}>
           <Grid item>
             <Typography variant="h3" variantMapping={{ h3: 'h1' }}>
               {`${githubConfig.name}`}

@@ -14,7 +14,6 @@ export default function Articles() {
       await axios
         .get(`/api/articles.json`)
         .then((resp) => {
-          console.log('data', resp);
           setData(resp.data);
           setLoading(false);
           setError(false);
@@ -31,7 +30,9 @@ export default function Articles() {
         <h3>Loading</h3>
       ) : (
         <>
-          <Typography variant="h2">Articles</Typography>
+          <Typography variant="h2" className="pl-10">
+            Articles
+          </Typography>
           <List>
             {data?.map((art) => (
               <ListItem key={art.id}>

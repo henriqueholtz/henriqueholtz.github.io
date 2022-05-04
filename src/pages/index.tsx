@@ -1,14 +1,17 @@
 import Head from '../components/Head';
-import { Typography } from '@material-ui/core';
+import { Container, Typography } from '@material-ui/core';
 
 export default function Home() {
   return (
     <>
       <Head title="Home" />
-      <Typography
-        variant="h3"
-        variantMapping={{ h3: 'h1' }}
-      >{`Welcome to my webpage!`}</Typography>
+      <Container>
+        <Typography
+          variant="h3"
+          className="pt-20"
+          variantMapping={{ h3: 'h1' }}
+        >{`Welcome to my webpage!`}</Typography>
+      </Container>
     </>
   );
 }

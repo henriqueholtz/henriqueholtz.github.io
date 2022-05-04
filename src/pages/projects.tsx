@@ -14,7 +14,6 @@ export default function Projects() {
       await axios
         .get(`/api/projects.json`)
         .then((resp) => {
-          console.log('data', resp);
           setData(resp.data);
           setLoading(false);
           setError(false);
@@ -31,7 +30,9 @@ export default function Projects() {
         <Typography>Loading</Typography>
       ) : (
         <>
-          <Typography variant="h2">Projects</Typography>
+          <Typography variant="h2" className="pl-10">
+            Projects
+          </Typography>
           <List>
             {data?.map((project: Project) => (
               <ListItem key={project.id}>
