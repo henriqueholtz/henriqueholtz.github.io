@@ -19,41 +19,42 @@ export default function About() {
   return (
     <>
       <Head title="About" />
-      {stats === RequestStats.Executing ? (
-        <h1>Loading</h1>
-      ) : (
-        <>
-          <Container style={{ paddingTop: '50px', color: 'var(--white)' }}>
-            <Grid container>
-              <Grid item>
-                <Typography variant="h3" variantMapping={{ h3: 'h1' }}>
-                  {`${githubConfig.name}`}
-                </Typography>
-                <Typography variant="body2" className="float-right">
-                  {`I'm ${myAge} years old.`}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  className=""
-                  style={{ paddingTop: '1.75rem' }}
-                >
-                  {`I'm working at ${githubConfig.company}.`}
-                </Typography>
-              </Grid>
-              <Grid item md={3}>
-                <Avatar
-                  src={githubConfig.avatarUrl}
-                  style={{
-                    marginLeft: '20px',
-                    width: '150px',
-                    height: '150px',
-                  }}
-                />
-              </Grid>
-            </Grid>
-          </Container>
-        </>
-      )}
+      {stats === RequestStats.Executing && <h1>Loading</h1>}
+      <Container
+        style={{
+          paddingTop: '50px',
+          color: 'var(--white)',
+          display: `${stats === RequestStats.Executing ? 'none' : ''}`,
+        }}
+      >
+        <Grid container>
+          <Grid item>
+            <Typography variant="h3" variantMapping={{ h3: 'h1' }}>
+              {`${githubConfig.name}`}
+            </Typography>
+            <Typography variant="body2" className="float-right">
+              {`I'm ${myAge} years old.`}
+            </Typography>
+            <Typography
+              variant="body2"
+              className=""
+              style={{ paddingTop: '1.75rem' }}
+            >
+              {`I'm working at ${githubConfig.company}.`}
+            </Typography>
+          </Grid>
+          <Grid item md={3}>
+            <Avatar
+              src={githubConfig.avatarUrl}
+              style={{
+                marginLeft: '20px',
+                width: '150px',
+                height: '150px',
+              }}
+            />
+          </Grid>
+        </Grid>
+      </Container>
     </>
   );
 }

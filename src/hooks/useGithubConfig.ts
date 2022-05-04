@@ -7,7 +7,15 @@ import { RequestStats } from '../types/axios/RequestStats';
 
 export const useGithubConfig = () => {
   const [stats, setStats] = useState<RequestStats>(RequestStats.Executing);
-  const [githubConfig, setGithubConfig] = useState<GitHubConfig | null>(null);
+  const [githubConfig, setGithubConfig] = useState<GitHubConfig>({
+    avatarUrl: 'https://github.com/henriqueholtz.png',
+    biography: 'Full Stack / Full Cycle Developer',
+    company: '',
+    email: 'henrique_holtz@hotmail.com',
+    name: 'Henrique Holtz',
+    location: 'Brasil',
+    repositoriesUrl: '',
+  } as GitHubConfig);
 
   useEffect(() => {
     const fetchAsync = async () => {
