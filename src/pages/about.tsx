@@ -1,15 +1,59 @@
 import Head from '../components/Head';
-import { Typography } from '@material-ui/core';
+import { Container, Typography, Avatar, Grid } from '@material-ui/core';
+import { useGithubConfig } from '../hooks';
 import React from 'react';
+import { RequestStats } from '../types/axios/RequestStats';
 
 export default function About() {
-  const myAge = new Date().getFullYear() - 1999;
+  const { stats, githubConfig } = useGithubConfig();
+  const today = new Date();
+  const myBirthDay = new Date(1999, 9, 7); // Oct 07 1999
+  let myAge = today.getFullYear() - myBirthDay.getFullYear();
+  const myBirthDayThisYear = new Date(
+    today.getFullYear(),
+    myBirthDay.getMonth(),
+    myBirthDay.getDay()
+  ); // Oct 07 {current Year}
+  const birthdayThisYear = today.valueOf() > myBirthDayThisYear.valueOf();
+  if (!birthdayThisYear) myAge -= 1;
   return (
     <>
       <Head title="About" />
-      <Typography variant="h3" variantMapping={{ h3: 'h1' }}>
-        {`Hi, I'm Henrique Holtz! I'm ${myAge} years old.`}
-      </Typography>
+      {stats === RequestStats.Executing ? (
+        <h1>Loading</h1>
+      ) : (
+        <>
+          <Container style={{ paddingTop: '50px', color: 'var(--white)' }}>
+            <Grid container>
+              <Grid item>
+                <Typography variant="h3" variantMapping={{ h3: 'h1' }}>
+                  {`${githubConfig.name}`}
+                </Typography>
+                <Typography variant="body2" className="float-right">
+                  {`I'm ${myAge} years old.`}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  className=""
+                  style={{ paddingTop: '1.75rem' }}
+                >
+                  {`I'm working at ${githubConfig.company}.`}
+                </Typography>
+              </Grid>
+              <Grid item md={3}>
+                <Avatar
+                  src={githubConfig.avatarUrl}
+                  style={{
+                    marginLeft: '20px',
+                    width: '150px',
+                    height: '150px',
+                  }}
+                />
+              </Grid>
+            </Grid>
+          </Container>
+        </>
+      )}
     </>
   );
 }
