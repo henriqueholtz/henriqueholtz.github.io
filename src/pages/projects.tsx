@@ -43,7 +43,7 @@ export default function Projects() {
                 </Typography>
                 <Link
                   color="initial"
-                  href={project.url}
+                  href={project.repository}
                   target="_blank"
                   rel="noreferrer"
                   underline="none"
