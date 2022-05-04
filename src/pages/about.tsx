@@ -40,7 +40,8 @@ export default function About() {
               className=""
               style={{ paddingTop: '1.75rem' }}
             >
-              {`I'm working at ${githubConfig.company}.`}
+              {`I'm working at`}
+              <strong>{` ${githubConfig.company}. `}</strong>
             </Typography>
           </Grid>
           <Grid item md={3}>

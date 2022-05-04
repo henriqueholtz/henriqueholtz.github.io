@@ -1,7 +1,7 @@
 import Head from '../components/Head';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { List, ListItem, Link } from '@material-ui/core';
+import { List, ListItem, Link, Typography } from '@material-ui/core';
 import { Article } from '../types';
 
 export default function Articles() {
@@ -31,10 +31,16 @@ export default function Articles() {
         <h3>Loading</h3>
       ) : (
         <>
-          <h3>Articles</h3>
+          <Typography variant="h2">Articles</Typography>
           <List>
             {data?.map((art) => (
               <ListItem key={art.id}>
+                <Typography
+                  variant="body1"
+                  style={{ marginRight: '5px', fontWeight: 700 }}
+                >
+                  {art.title}
+                </Typography>
                 <Link
                   color="initial"
                   href={art.url}
@@ -42,7 +48,7 @@ export default function Articles() {
                   rel="noreferrer"
                   underline="none"
                 >
-                  {art.description}
+                  See complete content
                 </Link>
               </ListItem>
             ))}
