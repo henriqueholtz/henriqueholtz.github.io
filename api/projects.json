@@ -5,5 +5,12 @@
     "description": "My WebPage!",
     "tags": ["next", "react", "github pages"],
     "repository": "https://github.com/henriqueholtz/henriqueholtz.github.io"
+  },
+  {
+    "id": 2,
+    "title": "Bin2Dec Converter",
+    "description": "This application was made with ReactJs, and after, migrate to NextJs, for converter numbers of binary to decimal or on the contrary.",
+    "tags": ["next", "react", "github pages", "vercel", "responsive"],
+    "repository": "https://github.com/henriqueholtz/Holtz_Bin2Dec"
   }
 ]

@@ -1,11 +1,13 @@
 [
   {
     "id": 1,
+    "title": "API REST e RESTFUL",
     "description": "API REST e RESTFUL",
     "url": "https://dev.to/henriqueholtz/api-rest-e-restful-b3m"
   },
   {
     "id": 2,
+    "title": "How to publish a React app with surge.sh",
     "description": "How to publish a React app with surge.sh",
     "url": "https://dev.to/henriqueholtz/how-to-publish-areact-app-with-surgesh-43j3"
   }
