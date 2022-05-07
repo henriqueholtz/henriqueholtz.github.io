@@ -37,9 +37,6 @@ export default function Certificates() {
         <Typography>Loading</Typography>
       ) : (
         <>
-          <Typography variant="h2" className="pl-10">
-            Certificates
-          </Typography>
           <List>
             {data?.map((cert: Certificate) => (
               <ListItem key={cert.id}>

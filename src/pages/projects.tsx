@@ -29,32 +29,27 @@ export default function Projects() {
       {loading ? (
         <Typography>Loading</Typography>
       ) : (
-        <>
-          <Typography variant="h2" className="pl-10">
-            Projects
-          </Typography>
-          <List>
-            {data?.map((project: Project) => (
-              <ListItem key={project.id}>
-                <Typography
-                  variant="body1"
-                  style={{ marginRight: '5px', fontWeight: 700 }}
-                >
-                  {project.title}
-                </Typography>
-                <Link
-                  color="initial"
-                  href={project.repository}
-                  target="_blank"
-                  rel="noreferrer"
-                  underline="none"
-                >
-                  See the repository
-                </Link>
-              </ListItem>
-            ))}
-          </List>
-        </>
+        <List>
+          {data?.map((project: Project) => (
+            <ListItem key={project.id}>
+              <Typography
+                variant="body1"
+                style={{ marginRight: '5px', fontWeight: 700 }}
+              >
+                {project.title}
+              </Typography>
+              <Link
+                color="initial"
+                href={project.repository}
+                target="_blank"
+                rel="noreferrer"
+                underline="none"
+              >
+                See the repository
+              </Link>
+            </ListItem>
+          ))}
+        </List>
       )}
     </>
   );

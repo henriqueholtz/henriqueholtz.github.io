@@ -29,32 +29,27 @@ export default function Articles() {
       {loading ? (
         <h3>Loading</h3>
       ) : (
-        <>
-          <Typography variant="h2" className="pl-10">
-            Articles
-          </Typography>
-          <List>
-            {data?.map((art) => (
-              <ListItem key={art.id}>
-                <Typography
-                  variant="body1"
-                  style={{ marginRight: '5px', fontWeight: 700 }}
-                >
-                  {art.title}
-                </Typography>
-                <Link
-                  color="initial"
-                  href={art.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  underline="none"
-                >
-                  See complete content
-                </Link>
-              </ListItem>
-            ))}
-          </List>
-        </>
+        <List>
+          {data?.map((art) => (
+            <ListItem key={art.id}>
+              <Typography
+                variant="body1"
+                style={{ marginRight: '5px', fontWeight: 700 }}
+              >
+                {art.title}
+              </Typography>
+              <Link
+                color="initial"
+                href={art.url}
+                target="_blank"
+                rel="noreferrer"
+                underline="none"
+              >
+                See complete content
+              </Link>
+            </ListItem>
+          ))}
+        </List>
       )}
     </>
   );
