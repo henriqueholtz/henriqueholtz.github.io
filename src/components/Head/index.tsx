@@ -12,7 +12,7 @@ export default function CustomHead({ title }: Props) {
       <Head>
         <title>{`[${title}] - Henrique Holtz`}</title>
       </Head>
-      <Typography variant="h2" className="pl-10">
+      <Typography data-testid="CustomHead" variant="h2" className="pl-10">
         {title}
       </Typography>
     </>
