@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CustomHead from 'src/components/Head';
+import CustomHead from '../components/Head';
 import axios from 'axios';
 import { List, ListItem, Typography, Link } from '@material-ui/core';
 import { Project } from '../types/Project';
