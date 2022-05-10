@@ -82,5 +82,40 @@
     "date": "07/2021",
     "url": "https://cursos.alura.com.br/certificate/dcf00bfe-96d2-46e7-bcbc-b3175e8e8e48",
     "tags": ["React", "ReactJs", "Testes"]
+  },
+  {
+    "id": 8,
+    "title": "Kubernetes",
+    "description": "Kubernetes",
+    "instituion": {
+      "name": "Full Cycle",
+      "link": "https://fullcycle.com.br"
+    },
+    "date": "05/2022",
+    "url": "/certificates/fullcycle3/tecnicas-avancadas-com-git-e-github.png",
+    "tags": [
+      "Kubernetes",
+      "Pod",
+      "Deployment",
+      "ReplicaSet",
+      "ClusterIP",
+      "Kind",
+      "Docker",
+      "LoadBalancer",
+      "Liveness",
+      "Readiness",
+      "Startup Probe",
+      "ResourcesControl",
+      "PersistentVolume",
+      "PersistentVolumeClaim",
+      "ConfigMap",
+      "Secret",
+      "HPA",
+      "HorizontalPodAutoscaler",
+      "StatefulSet",
+      "Ingress",
+      "ClusterIssuer",
+      "ServiceAccount"
+    ]
   }
 ]
